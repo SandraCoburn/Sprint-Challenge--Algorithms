@@ -7,7 +7,7 @@ pseudocode with respect to the input size n of each of the following:
 
 ```python
 a)  a = 0
-    while (a < n * n * n): #O(1)
+    while (a < n * n * n): #O(n)
         #(0 < 2 * 2* 2) = 0 < 8
       a = a + n * n
       #a = 0 + 2 * 2
@@ -16,7 +16,7 @@ a)  a = 0
 
 ```
 b)  sum = 0
-    for i in range(n): #O(n)
+    for i in range(n): #O(logn)
       j = 1
       while j < n: #O(n)
         j *= 2     #O(1)

@@ -2,11 +2,11 @@
 
 ## Exercise I
 
-a) O(n) - It doesn't matter if there are O(1) inside the loop. If n changes it affects the number of loops the while makes.
+a) O(n) - Linear time. It doesn't matter if there are O(1) inside the loop. If n changes it affects the number of loops the while makes.
 
-b) O(n^2) - There are two loops that will get affected according to the n value.
+b) O(nlogn) - Log linear time. There are two loops that will get affected according to the n value.
 
-c) O(1) - It's constant because no matter what the value of n is, there is gonna be only one operation done.
+c) O(logn) - Logaritmic time. The number of operations increases verry little in comparison to the variable. The function logn increases very slowly. = O(logn)
 
 ## Exercise II
 
@@ -26,4 +26,5 @@ safe point = f
 
 - We have to make a conditional if the egg brakes that would be the f point and then another conditional to have the egg survive if it goes below f point.
 
-- Since we will have to throw the eggs from all the levels to find the safe point, it makes it linear complexity
+- Since we will have to throw the eggs from all the levels to find the safe point, it makes it logaritmic complexity O(logn)
+- Binary search - start in the middle,

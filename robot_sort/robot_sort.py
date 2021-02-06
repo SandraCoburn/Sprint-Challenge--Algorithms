@@ -115,13 +115,13 @@ class SortingRobot:
                 
                 #grab the first item to swap and move
                 self.swap_item()
-                print("item beg: ", self._item) #[2, 8, 9]
+                #print("item beg: ", self._item) #[2, 8, 9]
                 #start moving
                 self.move_right()
                
                 if self.compare_item() == 1: #greater
                     self.swap_item()
-                    print("item picked: ", self._item) #4
+                    #print("item picked: ", self._item) #4
                     #flag it
                     self.set_light_on()
                     
@@ -131,10 +131,10 @@ class SortingRobot:
                 else:
                     self.move_left()
                     self.swap_item() #return item to original position and grab next
-                    print("else n: ", self._item)
+                    #print("else n: ", self._item)
                     self.move_right()
                 
-            #return all the weay left to start all over
+            #return all the weay left
             while self.can_move_left():
                 self.move_left()
 
